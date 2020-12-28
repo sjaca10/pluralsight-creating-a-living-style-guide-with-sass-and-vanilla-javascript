@@ -1,0 +1,19 @@
+{
+  "name": "pluralsight-creating-a-living-style-guide-with-sass-and-vanilla-javascript",
+  "version": "1.0.0",
+  "description": "Pluralsight Course",
+  "main": "index.html",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@personalgh:sjaca10/pluralsight-creating-a-living-style-guide-with-sass-and-vanilla-javascript.git"
+  },
+  "author": "Javier Aguila",
+  "license": "ISC"
+}

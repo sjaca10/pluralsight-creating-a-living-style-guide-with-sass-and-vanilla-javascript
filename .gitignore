@@ -1,2 +1,5 @@
 # Word temporary
 ~$*.doc*
+
+# Node Files
+node_modules/
