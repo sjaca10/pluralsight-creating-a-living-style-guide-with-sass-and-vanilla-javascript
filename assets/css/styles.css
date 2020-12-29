@@ -711,7 +711,9 @@ a,
   text-transform: uppercase;
   vertical-align: middle; }
 
-img, video, svg {
+img,
+video,
+svg {
   max-width: 100%;
   height: auto; }
 
@@ -788,6 +790,16 @@ svg {
 
 .icon-right-lg {
   margin-left: 10px; }
+
+.show-on-screen-readers {
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  /* Fallback: Older Browsers */
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+  white-space: nowrap; }
 
 .btn {
   border-radius: 30px;
