@@ -71,23 +71,58 @@
           <section id="styleguide-section-logo" class="styleguide-section">
             <h2>Logo</h2>
             <div class="styleguide-section-docs">
-              <p>{SECTION_DOCUMENTATION}</p>
+              <p>Adopt-a-Tree's logo is available in two colors, green and white, as two separate SVG files and a font icon with class <code class="styleguide-code-inline">at-icon-logo</code>. Usage of the SVG file in an image tag is preferred.</p>
+              <p>A logo with a gradient circle is also available as an SVG file.</p>
+              <p>All logos can be enlarged without incurring a loss in quality.</p>
             </div>
             <div class="styleguide-section-block">
-              <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
-
-              <h3>{DEMO_TITLE}</h3>
-              <!-- Add optional documentation for this demo -->
-              <!-- <div class="styleguide-section-docs">
-                <p>{SECTION_DOCUMENTATION}</p>
-              </div> -->
+              <h3>Logo: Default: SVG</h3>
               <div class="styleguide-demo-block">
                 <div class="styleguide-demo-each">
-                  {DEMO_MARKUP}
+                  <img src="assets/svg/logos/logo.svg" alt="Logo: Adopt-a-Tree" width="36" height="36">
                 </div> <!-- /.styleguide-demo-each -->
-                <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
               </div> <!-- /.styleguide-demo-block -->
 
+              <h3>Logo: Default: Icon Font</h3>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <div>
+                    <span class="at-icon-logo brand-1"></span>
+                  </div>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
+
+              <h3>Logo: White Variant: SVG</h3>
+              <div class="styleguide-section-docs">
+                <p>A white variant of the logo can be optionally used to contrast dark backgrounds.</p>
+              </div>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each black-bg">
+                  <img src="assets/svg/logos/logo-white.svg" alt="Logo: Adopt-a-Tree" width="36" height="36">
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
+
+              <h3>Logo: White Variant: Icon Font</h3>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each black-bg">
+                  <div>
+                    <span class="at-icon-logo white"></span>
+                  </div>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
+
+              <h3>Logo: Gradient with Circle: SVG</h3>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <img src="assets/svg/logos/logo-gradient-green-circle.svg" alt="Logo: Adopt-a-Tree" width="144" height="144">
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
+              
             </div> <!-- /.styleguide-section-block -->
           </section>
 
@@ -749,22 +784,111 @@
           <section id="styleguide-section-icons" class="styleguide-section">
             <h2>Icons</h2>
             <div class="styleguide-section-docs">
-              <p>{SECTION_DOCUMENTATION}</p>
+              <p>Adopt-a-Tree's font icon set was created with the <a href="https://icomoon.io/app" target="_blank">Icomoon app</a>. It includes font icon families like <a href="https://github.com/feathericons/feather" target="_blank">Feather</a>, <a href="https://github.com/FortAwesome/Font-Awesome" target="_blank">Font Awesome</a>, <a href="https://github.com/Keyamoon/IcoMoon-Free" target="_blank">Icomoon</a> and <a href="https://github.com/stephenhutchings/typicons.font" target="_blank">Typicons</a>.</p>
+              <p>Each icon has a class with a prefix of <code class="styleguide-code-inline">at-icon-</code>.</p>
+              <p>To update the icon set, click the 'Import Icons' button on the <a href="https://icomoon.io/app/">Icomoon website</a> and upload the <em>selection.json</em> file from the <em>font-icon</em> folder inside the <em>assets</em> folder. Add or delete icons as needed. Download the new icon set, copy the contents of the CSS file into the <em>font-icons</em> partial and update the paths in the <code class="styleguide-code-inline">@font-face</code> rule in the file.</p>
+              <p><a href="assets/font-icon/demo.html" class="font-bold">Click here to see the list of all icons.</a></p>
             </div>
             <div class="styleguide-section-block">
-              <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+              <div class="styleguide-section-files">Reference files: _globals.scss, _font-icons.scss, _variables.scss</div>
 
-              <h3>{DEMO_TITLE}</h3>
-              <!-- Add optional documentation for this demo -->
-              <!-- <div class="styleguide-section-docs">
-                <p>{SECTION_DOCUMENTATION}</p>
-              </div> -->
+              <h3>Icons: Types</h3>
+
+              <h4>Icons: Types: Logo</h4>
               <div class="styleguide-demo-block">
                 <div class="styleguide-demo-each">
-                  {DEMO_MARKUP}
+                  <span class="at-icon-logo"></span>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+              </div> <!-- /.styleguide-demo-block -->          
+
+              <h4>Icons: Types: Arrows and Chevrons</h4>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <span class="at-icon-arrow-down"></span>
+                  <span class="at-icon-arrow-up"></span>
+                  <span class="at-icon-arrow-left"></span>
+                  <span class="at-icon-arrow-right"></span>
+                  <span class="at-icon-chevron-down"></span>
+                  <span class="at-icon-chevron-up"></span>
+                  <span class="at-icon-chevron-left"></span>
+                  <span class="at-icon-chevron-right"></span>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+              </div> <!-- /.styleguide-demo-block -->          
+
+              <h4>Icons: Types: Adopt-a-Tree: Projects</h4>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <span class="at-icon-atom"></span>
+                  <span class="at-icon-droplet"></span>
+                  <span class="at-icon-earth"></span>
+                  <span class="at-icon-leaf"></span>
+                  <span class="at-icon-paw"></span>
+                  <span class="at-icon-restaurant"></span>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+              </div> <!-- /.styleguide-demo-block -->          
+
+              <h4>Icons: Types: App</h4>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <span class="at-icon-cart"></span>
+                  <span class="at-icon-x"></span>
+                  <span class="at-icon-card"></span>
+                  <span class="at-icon-dollar"></span>
+                  <span class="at-icon-home"></span>
+                  <span class="at-icon-loader"></span>
+                  <span class="at-icon-map"></span>
+                  <span class="at-icon-target"></span>
+                  <span class="at-icon-user"></span>
+                  <span class="at-icon-user-x"></span>
                 </div> <!-- /.styleguide-demo-each -->
                 <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
               </div> <!-- /.styleguide-demo-block -->
+
+              <h3>Icons: Sizes</h3>
+              <div class="styleguide-section-docs">
+                <p>There are 4 common icon sizes, including the default size.</p>
+              </div>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <span class="at-icon-leaf"></span>
+                  <span class="at-icon-leaf icon-size-lg"></span>
+                  <span class="at-icon-leaf icon-size-xl"></span>
+                  <span class="at-icon-leaf icon-size-xxl"></span>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+              </div> <!-- /.styleguide-demo-block -->              
+
+              <h3>Icons: Spacing</h3>
+              <div class="styleguide-section-docs">
+                <p>Left and right spacing for icons.</p>
+              </div>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <div class="spacing-v">
+                    <span class="at-icon-leaf icon-left"></span>
+                    <span>Icon: Left: Spacing: Default</span>
+                  </div>
+
+                  <div class="spacing-v">
+                    <span class="at-icon-leaf icon-left-lg"></span>
+                    <span>Icon: Left: Spacing: Large</span>
+                  </div>
+
+                  <div class="spacing-v">
+                    <span>Icon: Right: Spacing: Default</span>
+                    <span class="at-icon-leaf icon-right"></span>
+                  </div>
+
+                  <div class="spacing-v">
+                    <span>Icon: Right: Spacing: Large</span>
+                    <span class="at-icon-leaf icon-right-lg"></span>
+                  </div>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+              </div> <!-- /.styleguide-demo-block -->              
 
             </div> <!-- /.styleguide-section-block -->
           </section>
