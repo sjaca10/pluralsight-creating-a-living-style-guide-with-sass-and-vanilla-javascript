@@ -1272,19 +1272,39 @@
           <section id="styleguide-section-banners" class="styleguide-section">
             <h2>Banners</h2>
             <div class="styleguide-section-docs">
-              <p>{SECTION_DOCUMENTATION}</p>
+              <p>Banners are full-width sections with background images, overlays and text.</p>
+              <p>The demo example adds the background image as an inline style. Please create a new modifier class for each banner in the project and add the background image to it.</p>  
             </div>
             <div class="styleguide-section-block">
-              <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+              <div class="styleguide-section-files">Reference files: _components.scss, _variables.scss</div>
 
-              <h3>{DEMO_TITLE}</h3>
-              <!-- Add optional documentation for this demo -->
-              <!-- <div class="styleguide-section-docs">
-                <p>{SECTION_DOCUMENTATION}</p>
-              </div> -->
+              <h3>Banners: Heading</h3>
               <div class="styleguide-demo-block">
                 <div class="styleguide-demo-each">
-                  {DEMO_MARKUP}
+                  <div class="banner" style="background-image: url('assets/img/fern-hands.jpg')">
+                    <div class="overlay"></div>
+                    <div class="banner-content text-center">
+                      <h1 class="white font-bold">Greening of Abandoned Copper Mine</h1>
+                    </div>
+                  </div>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
+
+              <h3>Banners: Heading, Subheading</h3>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <div class="banner" style="background-image: url('assets/img/art-heart.jpg')">
+                    <div class="overlay"></div>
+                    <div class="banner-content text-center">
+                      <img src="assets/svg/logos/logo-white.svg" width="44" height="44" alt="Logo: Adopt-a-Tree">
+                      <div>
+                        <h1 class="banner-heading">Adopt-a-Tree</h1>
+                        <div class="banner-subheading">Crowd Sourcing for Trees</div>
+                      </div>
+                      <div class="font-bold">An Initiative by Carved Rock Fitness</div>
+                    </div>
+                  </div>
                 </div> <!-- /.styleguide-demo-each -->
                 <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
               </div> <!-- /.styleguide-demo-block -->
