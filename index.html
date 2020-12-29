@@ -17,7 +17,7 @@
       <div class="styleguide">
         <nav class="styleguide-nav">
           <button class="btn-styleguide-menu btn btn--brand-1 btn--xs" id="js-btn-styleguide-menu">MENU</button>
-          <ul class="styleguide-sidebar" id="js-styleguide-sidebar">
+          <ul class="styleguide-sidebar list-reset" id="js-styleguide-sidebar">
             <li><a href="#styleguide-section-guidelines">Guidelines</a></li>
             <li><a href="#styleguide-section-logo">Logo</a></li>
             <li><a href="#styleguide-section-colors">Colors</a></li>
@@ -259,7 +259,7 @@
               <p><code class="styleguide-code-inline">$spacing-2</code> is twice the value of <code class="styleguide-code-inline">$spacing</code> and so on.</p>
             </div>
             <div class="styleguide-section-block">
-              <div class="styleguide-section-files">Reference files: _spacing.scss, _variables.scss</div>
+              <div class="styleguide-section-files">Reference files: _globals.scss, _spacing.scss, _variables.scss</div>
 
               <h3>Spacing: All Sides</h3>
               <div class="styleguide-section-docs">
@@ -355,6 +355,22 @@
                   <div class="spacing-2-b">Spacing-2: Bottom</div>
                   <div class="spacing-3-b">Spacing-3: Bottom</div>
                   <div class="spacing-half-b">Spacing-half: Bottom</div>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
+
+              <h3>Spacing: Reset padding on all sides</h3>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <div class="col gray-mist-bg padding-reset">Column: Reset Padding</div>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
+              
+              <h3>Spacing: Reset margins on all sides</h3>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <h2 class="margin-reset">H2 Heading: Margins reset</h2>
                 </div> <!-- /.styleguide-demo-each -->
                 <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
               </div> <!-- /.styleguide-demo-block -->
@@ -846,6 +862,12 @@
                     <li>Ordered List: Item 2</li>
                     <li>Ordered List: Item 3</li>
                   </ol>
+
+                  <ul class="list-reset">
+                    <li>List: Reset Styles: Item 1</li>
+                    <li>List: Reset Styles: Item 2</li>
+                    <li>List: Reset Styles: Item 3</li>
+                  </ul>
                 </div> <!-- /.styleguide-demo-each -->
                 <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
               </div> <!-- /.styleguide-demo-block -->
@@ -1009,6 +1031,7 @@
               <p>Buttons can be of different colors.</p>  
               <p>Buttons can be of different sizes (default, small, extra small and full-width).</p>
               <p>Buttons can be solid or hollow.</p>
+              <p>Buttons can have their styles reset so they no longer resemble buttons.</p>
               <p>Each button uses a base <code class="styleguide-code-inline">btn</code> class and modifier classes.</p>
               <p>To create a new solid or hollow button of a different color, create a new modifier class and call the <code class="styleguide-code-inline">btn-solid</code> mixin or <code class="styleguide-code-inline">btn-hollow</code> mixin. Include arguments as needed.</p>
             </div>
@@ -1058,7 +1081,15 @@
                 </div> <!-- /.styleguide-demo-each -->
                 <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
               </div> <!-- /.styleguide-demo-block -->
-              
+
+              <h3>Buttons: Reset Styles</h3>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each styleguide-demo-each--buttons">
+                  <button class="btn-reset">Button: Reset All Styles</button>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
+
             </div> <!-- /.styleguide-section-block -->
           </section>
 
@@ -1368,7 +1399,7 @@
 
         </section> <!-- /.styleguide-content -->
       </div> <!-- /.styleguide  -->
-    </main>
+    </main>    
     <script src="assets/js/style-guide.js"></script>
     <script src="assets/js/input-file-custom.js"></script>
   </body>

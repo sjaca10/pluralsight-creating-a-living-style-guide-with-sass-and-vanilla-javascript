@@ -22,12 +22,7 @@
   bottom: 0;
   overflow: auto;
   z-index: 1000;
-  transition: all 0.2s linear;
-  list-style-type: none;
-  margin-bottom: 0;
-  padding-left: 0; }
-  .styleguide-sidebar li {
-    margin-bottom: 0; }
+  transition: all 0.2s linear; }
   @media (max-width: 599px) {
     .styleguide-sidebar {
       left: -200px;
