@@ -46,46 +46,46 @@ table {
   border-spacing: 0; }
 
 .brand-1 {
-  color: #3ABB8D; }
+  color: #3abb8d; }
 
 .brand-1-bg {
-  background-color: #3ABB8D; }
+  background-color: #3abb8d; }
 
 .brand-1-light {
-  color: #75C8AA; }
+  color: #75c8aa; }
 
 .brand-1-light-bg {
-  background-color: #75C8AA; }
+  background-color: #75c8aa; }
 
 .brand-1-x-light {
-  color: #C7E9DD; }
+  color: #c7e9dd; }
 
 .brand-1-x-light-bg {
-  background-color: #C7E9DD; }
+  background-color: #c7e9dd; }
 
 .brand-2 {
-  color: #313C5A; }
+  color: #313c5a; }
 
 .brand-2-bg {
-  background-color: #313C5A; }
+  background-color: #313c5a; }
 
 .brand-2-light {
-  color: #41568C; }
+  color: #41568c; }
 
 .brand-2-light-bg {
-  background-color: #41568C; }
+  background-color: #41568c; }
 
 .red-crimson {
-  color: #D05858; }
+  color: #d05858; }
 
 .red-crimson-bg {
-  background-color: #D05858; }
+  background-color: #d05858; }
 
 .blue-aqua {
-  color: #3E9CD0; }
+  color: #3e9cd0; }
 
 .blue-aqua-bg {
-  background-color: #3E9CD0; }
+  background-color: #3e9cd0; }
 
 .black {
   color: #000; }
@@ -112,28 +112,28 @@ table {
   background-color: #999; }
 
 .gray-titanium {
-  color: #AAA; }
+  color: #aaa; }
 
 .gray-titanium-bg {
-  background-color: #AAA; }
+  background-color: #aaa; }
 
 .gray-cloud {
-  color: #DADEE8; }
+  color: #dadee8; }
 
 .gray-cloud-bg {
-  background-color: #DADEE8; }
+  background-color: #dadee8; }
 
 .gray-mist {
-  color: #F1F1F1; }
+  color: #f1f1f1; }
 
 .gray-mist-bg {
-  background-color: #F1F1F1; }
+  background-color: #f1f1f1; }
 
 .white {
-  color: #FFF; }
+  color: #fff; }
 
 .white-bg {
-  background-color: #FFF; }
+  background-color: #fff; }
 
 .color-font {
   color: #666; }
@@ -142,10 +142,10 @@ table {
   background-color: #666; }
 
 .color-link {
-  color: #3ABB8D; }
+  color: #3abb8d; }
 
 .color-link-bg {
-  background-color: #3ABB8D; }
+  background-color: #3abb8d; }
 
 .spacing {
   padding: 10px; }
@@ -655,7 +655,7 @@ ol {
 
 a,
 .link {
-  color: #3ABB8D;
+  color: #3abb8d;
   text-decoration: none;
   cursor: pointer; }
 
@@ -722,6 +722,74 @@ svg {
 .icon-right-lg {
   margin-left: 10px; }
 
+.btn {
+  border-radius: 30px;
+  border: 1px solid;
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.5;
+  padding: 10px 30px;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s linear; }
+  .btn:hover {
+    transition: all 0.2s ease-in; }
+
+.btn--brand-1 {
+  color: #fff;
+  background-color: #3abb8d;
+  border-color: #3abb8d;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
+  .btn--brand-1:hover {
+    color: #fff;
+    background-color: #75c8aa;
+    border-color: #75c8aa; }
+
+.btn--brand-2 {
+  color: #fff;
+  background-color: #313c5a;
+  border-color: #313c5a;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
+  .btn--brand-2:hover {
+    color: #fff;
+    background-color: #41568c;
+    border-color: #41568c; }
+
+.btn-hollow--brand-1 {
+  color: #3abb8d;
+  background-color: transparent;
+  border-color: currentColor; }
+  .btn-hollow--brand-1:hover {
+    color: #75c8aa; }
+
+.btn-hollow--brand-2 {
+  color: #313c5a;
+  background-color: transparent;
+  border-color: currentColor; }
+  .btn-hollow--brand-2:hover {
+    color: #41568c; }
+
+.btn-hollow--white {
+  color: #fff;
+  background-color: transparent;
+  border-color: currentColor; }
+  .btn-hollow--white:hover {
+    color: #dadee8; }
+
+.btn--sm {
+  font-size: 85.71429%;
+  padding: 5px 30px; }
+
+.btn--xs {
+  font-size: 71.42857%;
+  padding: 5px 15px;
+  line-height: 1.2; }
+
 *,
 *:before,
 *:after {
@@ -734,7 +802,7 @@ body {
 
 body {
   color: #666;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   font-size: 14px;
   font-weight: 400;
   font-family: "Nunito Sans", sans-serif;

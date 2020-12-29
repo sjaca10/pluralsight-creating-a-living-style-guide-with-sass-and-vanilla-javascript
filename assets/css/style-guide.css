@@ -1,5 +1,5 @@
 .btn-styleguide-menu {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   border-radius: 0;
   height: 30px;
   position: fixed;
@@ -13,7 +13,7 @@
       display: none; } }
 
 .styleguide-sidebar {
-  background-color: #FFF;
+  background-color: #fff;
   font-weight: 600;
   padding-bottom: 150px;
   width: 200px;
@@ -40,8 +40,8 @@
     padding: 5px 10px;
     display: block; }
     .styleguide-sidebar a.active {
-      color: #FFF;
-      background-color: #313C5A; }
+      color: #fff;
+      background-color: #313c5a; }
 
 .styleguide-sidebar--show {
   left: 0;
@@ -51,8 +51,8 @@
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); } }
 
 .styleguide-link-label {
-  color: #313C5A;
-  background: #F1F1F1;
+  color: #313c5a;
+  background: #f1f1f1;
   border-radius: 50%;
   font-size: 71.42857%;
   font-weight: 700;
@@ -90,7 +90,7 @@
   margin: 0 auto 20px auto; }
 
 .styleguide-section-block {
-  background-color: #FFF;
+  background-color: #fff;
   padding: 20px; }
   .styleguide-section-block > h3 {
     color: #999;
@@ -107,12 +107,12 @@
 
 .styleguide-code-inline {
   font-family: "Inconsolata", monospace;
-  background-color: #FFF;
+  background-color: #fff;
   padding: 0 2.5px; }
 
 .styleguide-code-block {
-  background-color: #C7E9DD;
-  border: 1px solid #3ABB8D;
+  background-color: #c7e9dd;
+  border: 1px solid #3abb8d;
   font-family: "Inconsolata", monospace;
   font-size: 14px;
   padding: 10px;
@@ -130,10 +130,10 @@
   text-transform: uppercase; }
 
 .styleguide-do {
-  color: #3ABB8D; }
+  color: #3abb8d; }
 
 .styleguide-dont {
-  color: #D05858; }
+  color: #d05858; }
 
 .btn-styleguide-code {
   margin: 20px auto 30px;
@@ -147,7 +147,7 @@
   vertical-align: top;
   margin: 10px 0 20px; }
   .styleguide-box-demo.white-bg, .styleguide-box-demo.gray-mist-bg {
-    border: 1px solid #DADEE8; }
+    border: 1px solid #dadee8; }
 
 .styleguide-demo-each--colors {
   font-size: 85.71429%;
@@ -162,13 +162,16 @@
     background-color: #666; }
 
 .styleguide-demo-each--spacing > div {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   margin: 0 0 10px 0; }
 
 .styleguide-demo-each--containers > div {
   margin-bottom: 10px;
-  background-color: #C7E9DD; }
+  background-color: #c7e9dd; }
 
 .styleguide-demo-each--margin-auto > div {
-  background-color: #C7E9DD;
+  background-color: #c7e9dd;
   padding: 10px; }
+
+.styleguide-demo-each--buttons .btn {
+  margin: 0 0 10px 0; }
