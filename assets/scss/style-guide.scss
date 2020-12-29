@@ -1,7 +1,4 @@
-// ---------------------------------------------
-// STYLE GUIDE
-
-
+// Style Guide
 @import "partials/functions";
 @import "partials/variables";
 
@@ -9,10 +6,7 @@
 $styleguide-sidebar-width: 200px;
 $zindex-styleguide-menu: 1000;
 
-
-// ---------------------------------------------
-// STYLE GUIDE: BUTTON TO TOGGLE SIDEBAR ON MOBILE
-
+// Style Guide: Button to toggle sidebar on mobile
 .btn-styleguide-menu {
   background-color: $gray-mist;
   border-radius: 0;
@@ -24,18 +18,15 @@ $zindex-styleguide-menu: 1000;
   width: 100%;
   z-index: $zindex-styleguide-menu;
 
-  @media(min-width: $media-sm) {
+  @media (min-width: $media-sm) {
     display: none;
   }
 }
- 
 
-// ---------------------------------------------
-// STYLE GUIDE: SIDEBAR
-
+// Style Guide: Sidebar
 .styleguide-sidebar {
   background-color: $white;
-  font-weight: $font-semi-bold;  
+  font-weight: $font-semi-bold;
   padding-bottom: 150px; // Prevents cutting off menu from the bottom on browsers like Firefox
   width: $styleguide-sidebar-width;
   height: 100vh;
@@ -45,12 +36,12 @@ $zindex-styleguide-menu: 1000;
   z-index: $zindex-styleguide-menu;
   transition: all 0.2s linear;
 
-  @media(max-width: $media-sm-max) {
+  @media (max-width: $media-sm-max) {
     left: -($styleguide-sidebar-width);
     top: $spacing-3;
   }
 
-  @media(min-width: $media-sm) {
+  @media (min-width: $media-sm) {
     left: 0;
     top: 0;
   }
@@ -70,7 +61,7 @@ $zindex-styleguide-menu: 1000;
   left: 0;
   transition: all 0.2s linear;
 
-  @media(max-width: $media-sm-max) {
+  @media (max-width: $media-sm-max) {
     box-shadow: 0px 4px 10px rgba($black, 0.1);
   }
 }
@@ -87,17 +78,14 @@ $zindex-styleguide-menu: 1000;
   display: inline-block;
 }
 
-
-// ---------------------------------------------
-// STYLE GUIDE: CONTENT
-
+// Style Guide: Content
 .styleguide-logo {
   display: block;
   margin: 0 auto $spacing-3;
 }
 
 .styleguide-heading {
-  text-align: center; 
+  text-align: center;
   margin: 0;
 }
 
@@ -105,7 +93,7 @@ $zindex-styleguide-menu: 1000;
   padding: ($spacing * 5) 0 $spacing-3 0;
   max-width: $media-lg;
 
-  @media(min-width: $media-sm) {
+  @media (min-width: $media-sm) {
     padding: $spacing-3 $spacing-2 0 ($styleguide-sidebar-width + $spacing-2);
     margin: 0 auto;
   }
@@ -117,7 +105,7 @@ $zindex-styleguide-menu: 1000;
 
 .styleguide-section {
   padding: ($spacing * 6) 0 0 0;
-  
+
   > .styleguide-section-docs {
     padding: 0 $spacing-2;
   }
@@ -141,7 +129,7 @@ $zindex-styleguide-menu: 1000;
     text-align: center;
     padding: 0 0 $spacing 0;
   }
-  
+
   > h4 {
     text-align: center;
     margin-bottom: $spacing;
@@ -150,7 +138,7 @@ $zindex-styleguide-menu: 1000;
 
 .styleguide-section-files {
   font-style: italic;
-  text-align: center;  
+  text-align: center;
   margin: 0 0 $spacing-2 0;
 }
 
@@ -183,13 +171,14 @@ $zindex-styleguide-menu: 1000;
 }
 
 // Style Guide Content: Dos and Don'ts
-.styleguide-dont, .styleguide-do {
+.styleguide-dont,
+.styleguide-do {
   font-weight: $font-bold;
   text-transform: uppercase;
-} 
+}
 
 .styleguide-do {
-  color: $brand-1; 
+  color: $brand-1;
 }
 
 .styleguide-dont {
