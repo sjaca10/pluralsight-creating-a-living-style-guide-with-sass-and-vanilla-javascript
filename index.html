@@ -856,7 +856,7 @@
                   </a>
                 </div> <!-- /.styleguide-demo-each -->
                 <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
-              </div> <!-- /.styleguide-demo-block -->
+              </div> <!-- /.styleguide-demo-block -->              
               
               <h3>Typography: Lists</h3>
               <div class="styleguide-demo-block">
@@ -1456,19 +1456,50 @@
           <section id="styleguide-section-tabs" class="styleguide-section">
             <h2>Tabs</h2>
             <div class="styleguide-section-docs">
-              <p>{SECTION_DOCUMENTATION}</p>
+              <p>Tabs use the <a href="https://github.com/cferdinandi/tabby" target="_blank">Tabby plugin</a>.</p>
+              <p>Multiple instances can be created by changing the value of the data attribute on the list element.</p>
+              <p>For older browser support, the <em>tabby.polyfills.js</em> file or its minified version can be downloaded from the git repository and added to the list of scripts.</p>
             </div>
             <div class="styleguide-section-block">
-              <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
-
-              <h3>{DEMO_TITLE}</h3>
-              <!-- Add optional documentation for this demo -->
-              <!-- <div class="styleguide-section-docs">
-                <p>{SECTION_DOCUMENTATION}</p>
-              </div> -->
+              <div class="styleguide-section-files">Reference files: _tabby.scss, _variables.scss, tabby.js</div>
               <div class="styleguide-demo-block">
                 <div class="styleguide-demo-each">
-                  {DEMO_MARKUP}
+                  <ul class="tab-block" data-tabs>
+                    <li class="tab-each">
+                      <a href="#tab-projects" class="tab-each-anchor" data-tabby-default>
+                        <span class="at-icon-leaf icon-left-lg"></span>
+                        <span>Projects</span>
+                      </a>
+                    </li>
+                    <li class="tab-each">
+                      <a href="#tab-payment" class="tab-each-anchor">
+                        <span class="at-icon-card icon-left-lg"></span>
+                        <span>Payment</span>
+                      </a>
+                    </li>
+                    <li class="tab-each">
+                      <a href="#tab-profile" class="tab-each-anchor">
+                        <span class="at-icon-user icon-left-lg"></span>
+                        <span>Profile</span>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <div id="tab-projects" class="spacing-v">
+                    Content: Projects
+                  </div>
+                  <div id="tab-payment" class="spacing-v">
+                    Content: Payment
+                  </div>
+                  <div id="tab-profile" class="spacing-v">
+                    Content: Profile
+                  </div>
+
+                  <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                      var tabs = new Tabby('[data-tabs]');
+                    });
+                  </script>
                 </div> <!-- /.styleguide-demo-each -->
                 <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
               </div> <!-- /.styleguide-demo-block -->
@@ -1479,19 +1510,60 @@
           <section id="styleguide-section-sliders" class="styleguide-section">
             <h2>Sliders &amp; Carousels</h2>
             <div class="styleguide-section-docs">
-              <p>{SECTION_DOCUMENTATION}</p>
+              <p>Sliders and carousels use the <a href="https://github.com/NickPiscitelli/Glider.js" target="_blank">Glider plugin</a>.</p>
+              <p>The documentation and demo for the plugin are available <a href="https://nickpiscitelli.github.io/Glider.js/" target="_blank">here</a>.</p>
+              <p>The plugin has several features including swipe on touch devices, responsive breakpoints and fractional slides.</p>
             </div>
             <div class="styleguide-section-block">
-              <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+              <div class="styleguide-section-files">Reference files: _glider.scss, _glider-overrides.scss, _variables.scss, glider.js</div>
 
-              <h3>{DEMO_TITLE}</h3>
-              <!-- Add optional documentation for this demo -->
-              <!-- <div class="styleguide-section-docs">
-                <p>{SECTION_DOCUMENTATION}</p>
-              </div> -->
+              <h3>Carousels</h3>
+              <div class="styleguide-section-docs">
+                <p>Ensure that you use unique classes or (preferably) IDs for the next, previous buttons, dots and the slider. This is to ensure that multiple glider instances work on the same page.</p>
+              </div>
               <div class="styleguide-demo-block">
                 <div class="styleguide-demo-each">
-                  {DEMO_MARKUP}
+                  <div class="glider-block">
+                    <div id="js-glider-demo-1" class="row">
+                      <div class="col">
+                        <img src="assets/img/holding-leaf-600px.jpg" alt="Leaf with blurry background" class="border-radius">
+                      </div>
+                      <div class="col">
+                        <img src="assets/img/sapling-set-600px.jpg" alt="Collection of seedlings" class="border-radius">
+                      </div>
+                      <div class="col">
+                        <img src="assets/img/fern-hands-600px.jpg" alt="Fern grove" class="border-radius">
+                      </div>
+                      <div class="col">
+                        <img src="assets/img/borneo-tree-planting-600px.jpg" alt="Afforestation" class="border-radius">
+                      </div>
+                      <div class="col">
+                        <img src="assets/img/art-heart-600px.jpg" alt="Tree planting" class="border-radius">
+                      </div>
+                    </div>
+                    <button aria-label="Previous" class="glider-prev" id="js-glider-prev-demo-1">
+                      <span class="at-icon-chevron-left"></span>
+                    </button>
+                    <button aria-label="Next" class="glider-next" id="js-glider-next-demo-1">
+                      <span class="at-icon-chevron-right"></span>
+                    </button>
+                    <div class="dots" id="js-dots-demo-1"></div>
+                  </div>
+
+                  <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                      new Glider(document.querySelector("#js-glider-demo-1"), {
+                        slidesToShow: 2.5,
+                        slidesToScroll: 2,
+                        draggable: true,
+                        dots: "#js-dots-demo-1",
+                        arrows: {
+                          prev: "#js-glider-prev-demo-1",
+                          next: "#js-glider-next-demo-1"
+                        }
+                      });
+                    });
+                  </script>
                 </div> <!-- /.styleguide-demo-each -->
                 <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
               </div> <!-- /.styleguide-demo-block -->
@@ -1504,5 +1576,7 @@
     </main>    
     <script src="assets/js/style-guide.js"></script>
     <script src="assets/js/input-file-custom.js"></script>
+    <script src="assets/js/libs/tabby.js"></script>
+    <script src="assets/js/libs/glider.js"></script>
   </body>
 </html>
