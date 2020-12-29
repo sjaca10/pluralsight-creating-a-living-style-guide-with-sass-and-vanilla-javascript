@@ -795,6 +795,16 @@ svg {
     background-color: #41568c;
     border-color: #41568c; }
 
+.btn--white {
+  color: #3abb8d;
+  background-color: #fff;
+  border-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
+  .btn--white:hover {
+    color: #3abb8d;
+    background-color: #f1f1f1;
+    border-color: #f1f1f1; }
+
 .btn-hollow--brand-1 {
   color: #3abb8d;
   background-color: transparent;
@@ -863,6 +873,9 @@ input[type="submit"].btn {
 .label--lg {
   font-size: 114.28571%; }
 
+.label--inverse {
+  color: #fff; }
+
 .form-text {
   color: #222;
   background-color: #fff;
@@ -898,6 +911,29 @@ input[type="submit"].btn {
 textarea {
   min-height: 110px;
   resize: vertical; }
+
+.form-text-inverse {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.5;
+  padding: 10px 15px;
+  display: block;
+  width: 100%;
+  transition: all 0.2s linear; }
+  .form-text-inverse.placeholder {
+    color: #dadee8; }
+  .form-text-inverse:-moz-placeholder {
+    color: #dadee8; }
+  .form-text-inverse::-moz-placeholder {
+    color: #dadee8; }
+  .form-text-inverse:-ms-input-placeholder {
+    color: #dadee8; }
+  .form-text-inverse::-webkit-input-placeholder {
+    color: #dadee8; }
 
 .input-group {
   color: #666;

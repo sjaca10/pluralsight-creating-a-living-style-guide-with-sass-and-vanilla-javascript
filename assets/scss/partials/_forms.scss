@@ -33,6 +33,11 @@ input[type="submit"].btn {
   font-size: $font-size-lg;
 }
 
+// Label: Inverse Styles: Modifier
+.label--inverse {
+  color: $white;
+}
+
 // Forms: placeholder: mixin
 
 // Use the mixin like this:
@@ -111,6 +116,17 @@ input[type="submit"].btn {
 textarea {
   min-height: 110px;
   resize: vertical;
+}
+
+// Inverse Styles: Text inputs, textareas and selects
+// Use on dark backgrounds
+// Form text inverse: Mixin
+@mixin form-text-inverse {
+  @include form-text($color: $white, $color-bg: transparent, $color-border: $white, $color-placeholder: $gray-cloud);
+}
+
+.form-text-inverse {
+  @include form-text-inverse;
 }
 
 // Forms: inputs: group
