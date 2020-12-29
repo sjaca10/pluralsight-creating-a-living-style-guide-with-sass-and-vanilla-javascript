@@ -36,6 +36,7 @@
             <li><a href="#styleguide-section-banners">Banners</a></li>
             <li><a href="#styleguide-section-lists">Lists: Styled</a></li>
             <li><a href="#styleguide-section-cards">Cards</a></li>
+            <li><a href="#styleguide-section-loading">Loading</a></li>
             <li><a href="#styleguide-section-tabs">Tabs <span class="styleguide-link-label">JS</span></a></li>
             <li><a href="#styleguide-section-sliders">Sliders &amp; Carousels <span class="styleguide-link-label">JS</span></a></li>
           </ul>
@@ -1370,6 +1371,23 @@
             <h2>Avatars</h2>
             <div class="styleguide-section-block">
               <div class="styleguide-section-files">Reference files: _components.scss, _variables.scss</div>
+
+              <h3>Avatar: State: Empty</h3>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <div class="avatar text-center">
+                    <img src="assets/svg/avatar/avatar-user-empty-state.svg" alt="" width="144" height="144" class="avatar-img">
+                    <div class="avatar-username">Jenn Davis</div>
+                    <div class="avatar-meta-info">
+                      <div class="spacing-b">4 Projects / 212 Trees</div>
+                      <div class="font-size-sm">Treehugger since Mar 10, 2017</div>
+                    </div>
+                  </div>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
+
+              <h3>Avatar: Image Uploaded</h3>
               <div class="styleguide-demo-block">
                 <div class="styleguide-demo-each">
                   <div class="avatar text-center">
@@ -1558,6 +1576,30 @@
                 <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
               </div> <!-- /.styleguide-demo-block -->
 
+            </div> <!-- /.styleguide-section-block -->
+          </section>
+
+          <section id="styleguide-section-loading" class="styleguide-section">
+            <h2>Loading</h2>
+            <div class="styleguide-section-docs">
+              <p>An icon font with a CSS animation is used to show loading behavior.</p>
+            </div>
+            <div class="styleguide-section-block">
+              <div class="styleguide-section-files">Reference files: _components.scss, _.variables.scss</div>
+              
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <div class="text-center spacing-2-v">
+                    <div class="at-icon-loader icon-size-xxl loader"></div>
+                  </div>
+                  
+                  <button class="btn btn--brand-2">Button with Loading
+                    <span class="at-icon-loader icon-right loader"></span>
+                  </button>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
+            
             </div> <!-- /.styleguide-section-block -->
           </section>
 

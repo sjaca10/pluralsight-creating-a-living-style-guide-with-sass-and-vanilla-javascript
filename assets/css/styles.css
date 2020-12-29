@@ -1199,6 +1199,16 @@ textarea {
 .card-progress-target {
   margin-left: auto; }
 
+@keyframes animation-rotate {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.loader {
+  display: inline-block;
+  animation: animation-rotate 4s infinite linear; }
+
 .tab-block {
   list-style-type: none;
   margin-bottom: 0;
