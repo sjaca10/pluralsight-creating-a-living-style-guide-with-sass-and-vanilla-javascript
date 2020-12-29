@@ -19,8 +19,13 @@
   cursor: pointer;
   transition: $transition-linear;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transition: $transition-ease-in;
+  }
+
+  &:focus {
+    outline: 1px solid $color-focus;
   }
 }
 
@@ -49,7 +54,8 @@
   border-color: $color-border;
   box-shadow: $box-shadow;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color;
     background-color: $color-bg-hover;
     border-color: $color-bg-hover;
@@ -76,7 +82,11 @@
 
 // Button: Solid: White: Modifier
 @mixin btn--white {
-  @include btn-solid($color: $brand-1, $color-bg: $white, $color-bg-hover: $gray-mist);
+  @include btn-solid(
+    $color: $brand-1,
+    $color-bg: $white,
+    $color-bg-hover: $gray-mist
+  );
 }
 
 .btn--white {
@@ -101,7 +111,8 @@
   background-color: transparent;
   border-color: $color-border;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-hover;
   }
 }

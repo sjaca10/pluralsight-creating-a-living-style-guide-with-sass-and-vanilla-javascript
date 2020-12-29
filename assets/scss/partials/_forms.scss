@@ -64,6 +64,13 @@ input[type="submit"].btn {
   }
 }
 
+// Forms: focus state: mixin
+@mixin form-focus {
+  outline: 0;
+  border: 1px solid $color-focus;
+  transition: $transition-linear;
+}
+
 // Forms: text inputs, textareas, selects
 
 // Form Styling: Text Inputs, Textareas, Selects: Mixin
@@ -122,7 +129,12 @@ textarea {
 // Use on dark backgrounds
 // Form text inverse: Mixin
 @mixin form-text-inverse {
-  @include form-text($color: $white, $color-bg: transparent, $color-border: $white, $color-placeholder: $gray-cloud);
+  @include form-text(
+    $color: $white,
+    $color-bg: transparent,
+    $color-border: $white,
+    $color-placeholder: $gray-cloud
+  );
 }
 
 .form-text-inverse {
@@ -148,6 +160,10 @@ textarea {
   border: 1px solid $color-border;
   border-radius: $border-radius-xl;
   display: flex;
+
+  &:focus-within {
+    @include form-focus;
+  }
 }
 
 // Input Groups: Default style
@@ -158,6 +174,10 @@ textarea {
 .input-group-text {
   @include form-text($color-bg: transparent);
   border: none;
+
+  &:focus {
+    border: none;
+  }
 }
 
 .input-group-label {
@@ -186,6 +206,10 @@ textarea {
 .input-file {
   opacity: 0;
   position: absolute;
+
+  &:focus + .input-file-label {
+    outline: 1px solid $color-focus;
+  }
 }
 
 .input-file-label {

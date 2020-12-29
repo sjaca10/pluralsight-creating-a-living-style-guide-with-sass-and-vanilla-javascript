@@ -664,7 +664,15 @@ a,
 .link {
   color: #3abb8d;
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 0.2s linear; }
+  a:hover,
+  .link:hover {
+    color: #41568c;
+    transition: all 0.2s linear; }
+  a:focus,
+  .link:focus {
+    outline: 1px solid #75c8aa; }
 
 .link-action {
   color: #313c5a;
@@ -772,15 +780,17 @@ svg {
   outline: none;
   cursor: pointer;
   transition: all 0.2s linear; }
-  .btn:hover {
+  .btn:hover, .btn:focus {
     transition: all 0.2s ease-in; }
+  .btn:focus {
+    outline: 1px solid #75c8aa; }
 
 .btn--brand-1 {
   color: #fff;
   background-color: #3abb8d;
   border-color: #3abb8d;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
-  .btn--brand-1:hover {
+  .btn--brand-1:hover, .btn--brand-1:focus {
     color: #fff;
     background-color: #75c8aa;
     border-color: #75c8aa; }
@@ -790,7 +800,7 @@ svg {
   background-color: #313c5a;
   border-color: #313c5a;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
-  .btn--brand-2:hover {
+  .btn--brand-2:hover, .btn--brand-2:focus {
     color: #fff;
     background-color: #41568c;
     border-color: #41568c; }
@@ -800,7 +810,7 @@ svg {
   background-color: #fff;
   border-color: #fff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
-  .btn--white:hover {
+  .btn--white:hover, .btn--white:focus {
     color: #3abb8d;
     background-color: #f1f1f1;
     border-color: #f1f1f1; }
@@ -809,21 +819,21 @@ svg {
   color: #3abb8d;
   background-color: transparent;
   border-color: currentColor; }
-  .btn-hollow--brand-1:hover {
+  .btn-hollow--brand-1:hover, .btn-hollow--brand-1:focus {
     color: #75c8aa; }
 
 .btn-hollow--brand-2 {
   color: #313c5a;
   background-color: transparent;
   border-color: currentColor; }
-  .btn-hollow--brand-2:hover {
+  .btn-hollow--brand-2:hover, .btn-hollow--brand-2:focus {
     color: #41568c; }
 
 .btn-hollow--white {
   color: #fff;
   background-color: transparent;
   border-color: currentColor; }
-  .btn-hollow--white:hover {
+  .btn-hollow--white:hover, .btn-hollow--white:focus {
     color: #dadee8; }
 
 .btn--sm {
@@ -941,6 +951,10 @@ textarea {
   border: 1px solid #dadee8;
   border-radius: 30px;
   display: flex; }
+  .input-group:focus-within {
+    outline: 0;
+    border: 1px solid #75c8aa;
+    transition: all 0.2s linear; }
 
 .input-group-text {
   color: #222;
@@ -965,6 +979,8 @@ textarea {
     color: #aaa; }
   .input-group-text::-webkit-input-placeholder {
     color: #aaa; }
+  .input-group-text:focus {
+    border: none; }
 
 .input-group-label {
   color: #999;
@@ -980,6 +996,8 @@ textarea {
 .input-file {
   opacity: 0;
   position: absolute; }
+  .input-file:focus + .input-file-label {
+    outline: 1px solid #75c8aa; }
 
 .input-file-label {
   font-size: 114.28571%;
