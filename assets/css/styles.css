@@ -1004,6 +1004,10 @@ textarea {
   font-size: 142.85714%;
   font-style: italic; }
 
+.btn--list-each {
+  position: relative;
+  top: -14px; }
+
 *,
 *:before,
 *:after {
