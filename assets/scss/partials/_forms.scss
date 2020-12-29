@@ -230,3 +230,40 @@ textarea {
   left: -2px;
   top: -1px;
 }
+
+// Forms: states
+
+// States: Error
+.form-error {
+  border: 1px solid $color-error;
+}
+
+// States: Disabled: Mixin
+@mixin form-disabled {
+  color: $gray-cement;
+  background-color: $color-disabled;
+  border-color: $color-disabled;
+  opacity: 0.7;
+  cursor: not-allowed;
+
+  input,
+  textarea,
+  select {
+    cursor: not-allowed;
+  }
+
+  &:focus {
+    border-color: $color-disabled;
+  }
+}
+
+.form-disabled {
+  @include form-disabled;
+}
+
+// States: Required
+.form-required {
+  &:after {
+    content: "*";
+  }
+}

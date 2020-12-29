@@ -167,6 +167,12 @@
   @include btn--xs;
 }
 
+// Buttons: disabled: modifier
+.btn--disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 // Buttons: reset styles
 // Use for resetting styles on HTML Buttons
 @mixin btn-reset {
