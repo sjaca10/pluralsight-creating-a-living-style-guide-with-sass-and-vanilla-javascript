@@ -1,0 +1,60 @@
+// Globals
+
+// Globals: Alignment: Center: horizontal (uses auto margins)
+// Use for horizontally centering elements
+// Adds a block display so auto margins also work on inline and inline-block elements
+@mixin center-element {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.center-element {
+  @include center-element;
+}
+
+// Globals: Alignment: Inline & inline-block elements
+// Helper classes for vertical alignment with inline-block elements
+.vertical-align-top {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.vertical-align-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.vertical-align-bottom {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+// Globals: Alignment: Vertical and absolute center
+// Uses absolute positioning to center
+// Ensure a parent with position: relative wraps the centered element
+@mixin vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vertical-center {
+  @include vertical-center;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.absolute-center {
+  @include absolute-center;
+}
+
+// Use this class to wrap absolutely centered elements
+.position-relative {
+  position: relative;
+}
